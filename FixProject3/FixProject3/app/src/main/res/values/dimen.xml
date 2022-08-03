@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingbox">10dp</dimen>
+    <dimen name="titlesize">24sp</dimen>
+    <dimen name="textsize">16sp</dimen>
+    <dimen name="margintop">10dp</dimen>
+    <dimen name="margintopbtn">5dp</dimen>
+</resources>

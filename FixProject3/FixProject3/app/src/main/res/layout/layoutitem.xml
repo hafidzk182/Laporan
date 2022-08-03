@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardhasil"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginRight="14dp"
+    android:layout_marginLeft="14dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ruas1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvruas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LokasiKejadian"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvlokasi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Kejadian"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvkejadian"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvtanggal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uraianlanjut"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:id="@+id/tvuraian"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

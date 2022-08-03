@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">LK</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Nama</string>
+    <string name="nav_header_subtitle">Email</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="Nama">Nama</string>
+    <string name="passwordconf">Password Confirmation</string>
+    <string name="LOGOUT">LOGOUT</string>
+    <string name="menu_menutama">Home</string>
+    <string name="menu_laka">LAKA</string>
+    <string name="LogGagal">Login Gagal</string>
+    <string name="menu_lkag">LKAG</string>
+    <string name="menu_profile">Profile</string>
+    <string name="LAKA">Laporan Kejadian Khusus</string>
+    <string name="LKAG">Laporan Kerusakan Alat Gerbang</string>
+    <string name="uraianlanjut">Uraian Lanjutan</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="menutambahlaka">Form Laporan Kejadian khusus</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_menutama">MenutamaActivity</string>
+    <string-array name="ruas">
+        <item>Cipularang</item>
+        <item>Padaleunyi</item>
+    </string-array>
+    <string name="historylaka">History Laporan Kejadian Khusus</string>
+    <string name="FotoKejadian">Foto Kejadian</string>
+    <string-array name="Kejadian">
+        <item>Kecelakaan Menutup Jalur Total</item>
+        <item>Banjir Menutup Sebagian Jalur / Semua Jalur</item>
+        <item>Tanah Longsor Menutup Jalur</item>
+        <item>Demo Menutup Jalan Tol</item>
+        <item>Kecelakaan Bus/minibus korban banyak</item>
+    </string-array>
+    <string name="silkhnisiuraian">Silahkan Masukan Pesan Anda</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="ruas">RUAS</string>
+    <string name="LokasiKejadian">Lokasi Kejadian</string>
+    <string name="Kejadian">Kejadian</string>
+    <string name="tanggal">Tanggal Kejadian</string>
+    <string name="Submit">SUBMIT</string>
+    <string name="menutambahlkag">Form Kerusakan Barang</string>
+    <string name="gerbang">Gerbang</string>
+    <string name="namaalat">Nama Alat</string>
+    <string name="WaktuKerusakan">Waktu Kerusakan</string>
+    <string name="uraianpesan">Silahkan Masukan Pesan Anda</string>
+    <string name="FotoKerusakan">FotoKerusakan</string>
+    <string name="FotoAlat">Foto Alat</string>
+    <string name="WaktuKejadian">Waktu Kejadian</string>
+    <string name="title_activity_tambah_laka">TambahLakaActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="apa_yang_anda_ingin_lakukan">Apa Yang Anda Ingin Lakukan</string>
+    <string name="historylak">History Laka</string>
+    <string name="tambahlaka">TambahLaka</string>
+    <string name="Lak">Laporan Kejadian</string>
+    <string name="adapterlaka">AdapterLaka</string>
+    <string name="modellaka">modellaka</string>
+    <string name="SignOut">logout</string>
+    <string name="Terimakasih">Terima Kasih Sudah Menggunakan Aplikasi Ini</string>
+    <string name="historylkag">History LKAG</string>
+    <string name="historylka">History Laporan Kerusakan Alat Gerbang</string>
+    <string name="menu_lka">MenuLKAG</string>
+    <string name="form_kerusakan_alat_gerbang">Form Kerusakan Alat Gerbang</string>
+    <string name="Gerbang">Gerbang</string>
+    <string name="tanggalkerusakan">Tanggal Kerusakan</string>
+    <string name="pesanpengguna">Pesan Pengguna</string>
+    <string name="nama_alat">NAMA ALAT</string>
+    <string name="gerbang1">Gerbang</string>
+    <string name="nama_alat1">Nama Alat</string>
+    <string name="waktu_laporan1">Waktu Laporan</string>
+    <string name="uraian_pesan1">Uraian Pesan</string>
+    <string name="foto1">Foto</string>
+    <string name="ruas1">Ruas</string>
+    <string name="KEJADIAN">KEJADIAN</string>
+    <string name="LOKASIKEJADIAN">LOKASI KEJADIAN</string>
+    <string name="URAIANPESAN">URAIAN PESAN</string>
+    <string name="LaporanKejadian">Laporan Kejadian Khusus</string>
+    <string name="LaporanKerusakan">Laporan Kerusakan Alat</string>
+</resources>
