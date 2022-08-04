@@ -3,6 +3,7 @@ package com.hafidz.fixproject3.ui.gallery;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
@@ -33,8 +35,10 @@ public class TambahLAKA extends AppCompatActivity {
     EditText eduraiankej;
     ProgressDialog progressDialog;
     DatabaseReference database= FirebaseDatabase.getInstance().getReference();
+    DatePickerDialog datePicker;
     Spinner spinerruas;
     Spinner spinnerkejadian;
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,17 +110,27 @@ public class TambahLAKA extends AppCompatActivity {
             }
         });
 
-        DatePickerDialog.OnDateSetListener date = (datePicker, year, month, day) -> {
-            mycalendar.set(Calendar.YEAR, year);
-            mycalendar.set(Calendar.MONTH, month);
-            mycalendar.set(Calendar.DAY_OF_MONTH, day);
-            updatelabel();
-        };
+        final int day = mycalendar.get(Calendar.DAY_OF_MONTH);
+        final int month = mycalendar.get(Calendar.MONTH);
+        final int year = mycalendar.get(Calendar.YEAR);
 
-        edtvtgl.setOnClickListener(view -> new DatePickerDialog(TambahLAKA.this, date,
-                mycalendar.get(Calendar.YEAR),
-                mycalendar.get(Calendar.MONTH),
-                mycalendar.get(Calendar.DAY_OF_MONTH)).show());
+        datePicker = new DatePickerDialog(TambahLAKA.this);
+
+        edtvtgl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                datePicker = new DatePickerDialog(TambahLAKA.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(android.widget.DatePicker view, int year, int month, int dayOfMonth) {
+                        edtvtgl.setText(dayOfMonth + "/" + (month+1) + "/" + year);
+                        updatelabel();
+                    }
+                },year,month,day);
+                datePicker.getDatePicker().setMaxDate(mycalendar.getTimeInMillis());
+
+                datePicker.show();
+            }
+        });
     }
 
         private void updatelabel(){
