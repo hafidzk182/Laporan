@@ -37,7 +37,7 @@ public class HistoryLkaa extends AppCompatActivity {
         tvtampil.setHasFixedSize(true);
         tvtampil.setLayoutManager(mlayoutmanager);
         tvtampil.setItemAnimator(new DefaultItemAnimator());
-
+        tvtampil.setAdapter(adapterlaka);
         tampiData();
 
     }

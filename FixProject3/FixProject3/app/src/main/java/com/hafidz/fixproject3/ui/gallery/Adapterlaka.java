@@ -46,7 +46,9 @@ public class Adapterlaka extends RecyclerView.Adapter<Adapterlaka.Myview>{
 
     @Override
     public int getItemCount() {
-        return mlist.size();
+        try {
+            return mlist.size();
+        } catch (Exception ex){return 0;}
     }
 
     public class Myview extends RecyclerView.ViewHolder {
